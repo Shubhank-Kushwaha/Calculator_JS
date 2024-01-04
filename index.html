@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Javscript App</title>
+    <link href="index.css" rel="stylesheet"  />
+</head>
+<body class="body">
+    <h1 class="magic"> Normal Calculator </h1>
+    
+    <div class="formstyle">
+        <form name="form1"  >
+            <input class="h1" id = "calc" type ="text" name = "answer"> <br> <br>  
+            <input class = "input" type="button" value="1" onclick="form1.answer.value+='1'" id= "1">
+            <input class = "input" type="button" value="2" onclick="form1.answer.value+='2'" id="2">
+            <input class = "input" type="button" value="3" onclick="form1.answer.value+='3'" id="3">
+            <input class = "input" type="button" value="4" onclick="form1.answer.value+='4'" id="4">
+         
+            <br>
+            <input class = "input" type="button" value="5" onclick="form1.answer.value+='5'" id="5">
+            <input class = "input" type="button" value="6" onclick="form1.answer.value+='6'" id="6">
+            <input  class = "input" type="button" value="7" onclick="form1.answer.value+='7'" id="7">
+            <input  class = "input" type="button" value="8" onclick="form1.answer.value+='8'" id="8">
+         
+            <br>
+            <input class = "input" type="button" value="9" onclick="form1.answer.value+='9'" id="9">
+            <input class = "input" type="button" value="0" onclick="form1.answer.value+='0'" id="0">
+            <input class = "input"  type="button" value="+" onclick="form1.answer.value+='+'">
+            <input class = "input" type="button" value="-" onclick="form1.answer.value+='-'">
+         
+            <br>
+            <input class = "input" type="button" value="/" onclick="form1.answer.value+='/'">
+            <input class = "input" type="button" value="*" onclick="form1.answer.value+='*'" >
+            <input class = "clear" text = "white "type = "button" value = "CLEAR" onclick = "form1.answer.value = ''">    
+            
+            <br>
+            <input class = "resultc" type = "button" value = "RESULT" onclick = "form1.answer.value = eval(form1.answer.value) ">
+            <!-- <input text = "white "type = "button" value = "DEL" onclick = "form1.answer.value = (form1.answer.value).length">    
+             -->
+          
+
+        </form>
+    </div>
+    <script src= "index.js">
+    </script>
+
+    
+</body>
+</html>
